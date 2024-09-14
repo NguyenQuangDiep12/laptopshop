@@ -41,7 +41,7 @@ public class UserController {
 
   @RequestMapping("/")
   public String home(Model model) {
-    return "Home";
+    return "client/homepage/show";
   }
 
   @RequestMapping("/admin/user")
@@ -121,7 +121,7 @@ public class UserController {
   public String getDeleteUserPage(Model model, @PathVariable Long id) {
     User currentUser = this.userService.getUserById(id);
     model.addAttribute("newUser", currentUser);
-    return "/admin/user/delete";
+    return "admin/user/delete";
   }
 
   @PostMapping("/admin/user/delete")
