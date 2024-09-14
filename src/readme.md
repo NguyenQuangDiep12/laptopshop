@@ -1,3 +1,0 @@
-# DTO - DATA TRANSFER OBJECT
-
-# 1.DTO Pattern
